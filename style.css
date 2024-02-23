@@ -1,0 +1,67 @@
+@font-face {
+    font-family: comic;
+    src: url(Nexa-ExtraLight.ttf);
+}
+*{
+    font-family: comic;
+}
+.container{
+
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.start{
+    display: block;
+    margin: auto;
+    width: 500px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.div{
+    padding: 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    color:#000000 ;
+    border: 1px solid;
+
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 150px;
+}
+dialog{
+    border: none;
+    border-radius: 10px;
+
+   
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 100px;
+    text-align: center;
+    cursor: pointer;
+
+   
+}
+@keyframes ala {
+   from{
+    opacity: 0;
+    transform:translateY(200px)
+   }to{
+    opacity: 1;
+    transform:translateY(0px)
+   }
+}
